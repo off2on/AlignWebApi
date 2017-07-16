@@ -1,0 +1,13 @@
+﻿<div class="col-sm-9 col-md-9 col-lg-9">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" ng-repeat="pastevent in jsonData.PastEvents">
+            <past-events event-sub-title="{{pastevent.title}}"
+                         event-date-time="{{pastevent.date}}"
+                         event-place="{{pastevent.place}}"
+                         event-img-url="{{pastevent.img}}"
+                         event-place-address="{{pastevent.address}}">
+            </past-events>
+        </div>
+       
+    </div>
+</div>

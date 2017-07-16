@@ -1,0 +1,15 @@
+﻿<div class="col-sm-9 col-md-9 col-lg-9" >
+    <div ng-repeat="reviewRating in jsonData.reviews">
+        <event-reviews-ratings event-name="{{reviewRating.name}}"
+                               event-date-time="{{reviewRating.date}}">
+        </event-reviews-ratings>
+        <div ng-repeat="rev in reviewRating.ratings">
+            <reviews-ratings review="{{rev.review}}"
+                             name="{{rev.name}}"
+                             designation="{{rev.designation}}"
+                             rating=rev.rating
+                             img-url="{{rev.imgUrl}}">
+            </reviews-ratings>
+        </div>
+    </div>
+    </div>
